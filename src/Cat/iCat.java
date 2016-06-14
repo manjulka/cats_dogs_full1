@@ -5,5 +5,5 @@ package Cat;
  */
 public interface iCat
 {
-    public void doMeow();
+    void doMeow();
 }

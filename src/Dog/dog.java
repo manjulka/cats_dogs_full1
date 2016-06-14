@@ -10,22 +10,18 @@ public class dog extends Animal implements iDog
 {
     public String nameD;
     public int weightD;
-    public dog(String name, int weight)
+    public dog(String nameD, int weightD)
     {
-        nameD=name;
-        weightD=weight;
+        super(nameD, weightD);
     }
     public void doBark()
     {
-        System.out.print("Меня зовут ");
-        System.out.print(nameD);
-        System.out.println(". Гав гав");
+        System.out.print("Меня зовут " + getName() + ". Гав гав");
     }
     @Override
     public void eat(Food food)
     {
-
-        weightD+=food.getDozeWeight();
+        super.eat(food);
         doBark();
     }
 }

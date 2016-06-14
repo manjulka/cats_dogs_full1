@@ -5,5 +5,5 @@ package animal_1;
  */
 public interface iFood
 {
-    public int getDozeWeight();
+    int getDozeWeight();
 }

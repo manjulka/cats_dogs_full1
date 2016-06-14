@@ -5,5 +5,5 @@ package Dog;
  */
 public interface iDog
 {
-    public void doBark();
+    void doBark();
 }
